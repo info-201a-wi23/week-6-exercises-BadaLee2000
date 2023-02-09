@@ -17,7 +17,7 @@ home_owner <- read.csv('https://raw.githubusercontent.com/rfordatascience/tidytu
 library("tidyverse")
 # Your code here
 
-ggplot(home_owner) + geom_line(mapping = aes(x = year, y = home_owner_pct))
+ggplot(home_owner) + geom_line(mapping = aes(x = year, y = home_owner_pct,color=race))
 
 # Make a line plot of the percentage of homeowners for racial categories over time
 # and color the plot by racial category
